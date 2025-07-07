@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Resume Matcher</h1>
+  <form id="form">
+    <input type="file" name="resume" /><br/>
+    <textarea name="jd_text" placeholder="Paste JD here"></textarea><br/>
+    <button type="submit">Analyze</button>
+  </form>
+  <pre id="output"></pre>
+  <script>
+    document.getElementById("form").onsubmit = async e => {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const res = await fetch("/analyze/", {method:"POST", body:f});
+      const j = await res.json();
+      document.getElementById("output").textContent = JSON.stringify(j, null, 2);
+    };
+  </script>
+</body>
+</html>

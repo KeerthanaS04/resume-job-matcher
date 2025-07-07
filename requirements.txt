@@ -1,0 +1,10 @@
+fastapi 
+uvicorn
+transformers 
+torch
+pdfminer.six 
+python-docx
+nltk
+flashtext
+dotenv
+fpdf

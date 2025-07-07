@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Env
+.env
+*.env
+
+# Hugging Face cache
+~/.cache/
+*.bin
+
+# VSCode / Jupyter
+.vscode/
+.ipynb_checkpoints/
+
+# Output
+*.json
+*.pdf
