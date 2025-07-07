@@ -31,9 +31,7 @@ This project uses the **Groq API** (Mixtral / LLaMA) for ultra-fast and accurate
 
 ## How to Use
 
-### All the steps
-
-1. Set Your API Key
+### 1. Set Your API Key
 
 Create a `.env` file in the root directory:
 
