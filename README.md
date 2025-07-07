@@ -31,14 +31,16 @@ This project uses the **Groq API** (Mixtral / LLaMA) for ultra-fast and accurate
 
 ## How to Use
 
-### 1. Set Your API Key
+### All the steps
+
+1. Set Your API Key
 
 Create a `.env` file in the root directory:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
 
-### 2. Install Dependencies
+2. Install Dependencies
 pip install -r requirements.txt
 <details>
   <summary><code>
@@ -49,10 +51,10 @@ uvicorn
 </code></summary>
 </details>
 
-### 3. Run the Main Script
+3. Run the Main Script
 uvicorn main:app --reload
 
-## Folder Structure
+4. Folder Structure
 resume_job_matcher/
 ├── main.py
 ├── llm_utils.py
@@ -61,7 +63,7 @@ resume_job_matcher/
 ├── requirements.txt
 └── README.md
 
-## Todo / Improvements
+5. Todo / Improvements
 - Add PDF resume text extraction
 - Streamlit or Gradio UI
 - Auto-upload and preview JSON results
