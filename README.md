@@ -37,22 +37,20 @@ Create a `.env` file in the root directory:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
+```
 
-2. Install Dependencies
-pip install -r requirements.txt
-<details>
-  <summary><code>
+### 2. Install Dependencies
+`pip install -r requirements.txt`
 requests
 python-dotenv
 fastapi
 uvicorn
-</code></summary>
-</details>
 
-3. Run the Main Script
-uvicorn main:app --reload
+### 3. Run the Main Script
+`uvicorn main:app --reload`
 
-4. Folder Structure
+### 4. Folder Structure
+```
 resume_job_matcher/
 ├── main.py
 ├── llm_utils.py
@@ -60,8 +58,9 @@ resume_job_matcher/
 ├── .env.example
 ├── requirements.txt
 └── README.md
+```
 
-5. Todo / Improvements
+### 5. Todo / Improvements
 - Add PDF resume text extraction
 - Streamlit or Gradio UI
 - Auto-upload and preview JSON results
